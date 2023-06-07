@@ -2,57 +2,67 @@
 <html manifest="" lang="en-US">
 <head>
     <meta charset="UTF-8">
+	<link rel="stylesheet" href="plan.css">
 </head>
 <body>
-	<br>
-	<br>
+	<br />
+	<br />
 <div class="page-container">Planasdasdasdas</div>
-<div class="logo-container"><img style="height: 150px;" src="/home/mlopez/git/listado_tesis_lcd/imgs/hi-res.jpg" /><BR>Propuesta de tema de tesis<BR>Licenciatura en Ciencia de Datos<BR>
-<small>Facultad de Ciencias Exactas y Naturales - UBA</small></div>
-<table class="invoice-info-container">
-<tbody>
-<tr>
-	<td>Título del tema propuesto: <strong>{{titulo}}</strong></td>
-</tr>
-<tr>
-	<td>Resumen:<br><strong>{{resumen}}</strong></td>
-</tr>
-<tr>
-	<td>Palabras clave: <strong>{{palabras_claves}}</strong></td>
-</tr>
+<div class="logo-container">
+	<img style="height: 150px;" src="/home/mlopez/git/listado_tesis_lcd/imgs/hi-res.jpg" />
+	<br />
+	<div id="uba">
+		Universidad de Buenos Aires
+		<br />Facultad de Ciencias Exactas y Naturales
+		<br />Licenciatura en Ciencia de Datos
+	</div>
+	<br />Propuesta de tema de tesis
+</div>
 
-<tr>
-	<td>Conocimientos deseables: <strong>{{conocimientos}}</strong></td>
-</tr>
-<tr>
-	<td>¿Qué podría aprender quien realice esta tesis? <strong>{{promesa}}</strong></td>
-</tr>
-</tbody>
-</table>
+<div class="invoice-info-container">
+	<p id="titulo">
+		{{titulo}}
+	</p>
+	<p class="descripcion">
+		{{resumen}}
+	</p>
+	</p id="clave">
+		Palabras clave: <span class="code">{{palabras_claves}}</span>
+	</p>
 
+	<p>
+		Conocimientos deseables 
+	</p>
+	<p class="descripcion">
+		&nbsp;&nbsp;&nbsp;{{conocimientos}}
+	</p>
+	<p>
+		¿Qué podría aprender quien realice esta tesis? 
+	</p>
+	<p class="descripcion">
+		&nbsp;&nbsp;&nbsp;{{promesa}}
+	</p>
+</div>
 <br>
 
-<table class="invoice-info-container">
-<tbody>
-<tr class="line-container">
-	<td>Nombre: <strong>{{nombre}}</strong></td>
-</tr>
-<tr>
-	<td>Apellido: <strong>{{apellido}}</strong></td>
-</tr>
-<tr>
-	<td>Correo electrónico: <strong>{{correo}}</strong></td>
-</tr>
-<tr>
-	<td>Filiación: <strong>{{filiacion}}</strong></td>
-</tr>
-</tbody>
-</table>
+<hr />
+<div class="invoice-info-container">
+	<p>
+		Apellido y nombre: <span class="descripcion">{{apellido}}, {{nombre}}</span>
+	</p>
+	<p>
+		Correo electrónico: <span class="descripcion">{{correo}}</span>
+	</p>
+	<p>
+		Filiación: <span class="descripcion">{{filiacion}}</span>
+	</p>
+</div>
+<br />
 
-<BR>
 <div class="footer-thanks">{{mas_info}}</div>
 
 <div class="footer">
-<div class="footer-info">Documento generado el {{fecha}}</div>
+	<div class="footer-info">Documento generado el {{fecha}}</div>
 </div>
+
 </body>
